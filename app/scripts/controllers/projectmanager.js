@@ -1,7 +1,7 @@
 
 'use strict';
 angular.module('todosApp')
-  .controller('MainCtrl', function ($scope, localStorageService) {
+  .controller('ProjectManagerController', function ($scope, localStorageService) {
 
     var todosInStore = localStorageService.get('todos');
 

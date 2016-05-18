@@ -8,7 +8,7 @@
  * Controller of the todosApp
  */
 angular.module('todosApp')
-  .controller('AboutCtrl', function () {
+  .controller('TemplateManagerController', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
