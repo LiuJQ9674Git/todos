@@ -9,7 +9,8 @@
  * Main module of the application.
  */
 angular
-  .module('todosApp', [
+  .module('todosApp'
+    /*, [
     'ngAnimate',
     'ngCookies',
     'ngResource',
@@ -18,7 +19,8 @@ angular
     'ngTouch',
     'ui.sortable',
     'LocalStorageModule'
-  ]).config(['localStorageServiceProvider', function(localStorageServiceProvider){
+  ]*/
+  ).config(['localStorageServiceProvider', function(localStorageServiceProvider){
     localStorageServiceProvider.setPrefix('ls');
   }])
   .config(function ($routeProvider) {

@@ -1,0 +1,40 @@
+<!-- partials/state1.list.html -->
+<h3>List of State 1 Items</h3>
+<ul>
+  <li ng-repeat="item in items">{{ item }}</li>
+</ul>
+
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+<div class="content"  ng-controller="functionManagerController as ctrl">
+  <div class="header">
+    <h1>
+      <div><react-component name="Hello" props="ctrl.person"/></div>
+      <small>
+        <code>&lt;react-component name="Hello" props="ctrl.person"/&gt;</code>
+      </small>
+    </h1>
+    <h1>
+      <div><hello fname="ctrl.person.fname" lname="ctrl.person.lname"/></div>
+      <small>
+        <code>&lt;hello fname="ctrl.person.fname" lname="ctrl.person.lname"/&gt;</code>
+      </small>
+    </h1>
+  </div>
+
+  <form class="pure-form">
+    <fieldset>
+      <legend>Enter Name</legend>
+      <input type="text" ng-model="ctrl.person.fname" placeholder="First Name"/>
+      <input type="text" ng-model="ctrl.person.lname" placeholder="Last Name"/>
+    </fieldset>
+  </form>
+
+</div>
+<!--
+<script src="/bower_components/angular/angular.js"></script>
+<script src="/bower_components/react/react.js"></script>
+<script src="/bower_components/react/react-dom.js"></script>
+<script src="/bower_components/ngReact/ngReact.js"></script>
+
+<script src="../scripts/controllers/functionmanager.js"></script>
+-->

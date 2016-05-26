@@ -2,7 +2,9 @@
  * Created by liujianqiang on 16/5/26.
  */
 
-var app = angular.module( 'app', ['react'] );
+var app = angular.module( 'todosApp'
+  /**, ['react']**/
+);
 
 function FunctionManagerController() {
   this.person = { fname: 'Clark', lname: 'Kent' };
