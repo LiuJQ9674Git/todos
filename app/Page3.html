@@ -1,11 +1,65 @@
-
-  <div class="container" >
-    <div ng-view=""></div>
+<div class="content"  ng-controller="functionManagerController as ctrl">
+  <div class="header">
+    <h1>
+      <div><react-component name="Hello" props="ctrl.person"/></div>
+      <small>
+        <code>&lt;react-component name="Hello" props="ctrl.person"/&gt;</code>
+      </small>
+    </h1>
+    <h1>
+      <div><hello fname="ctrl.person.fname" lname="ctrl.person.lname"/></div>
+      <small>
+        <code>&lt;hello fname="ctrl.person.fname" lname="ctrl.person.lname"/&gt;</code>
+      </small>
+    </h1>
   </div>
 
-kkkkkkkkk
+  <form class="pure-form">
+    <fieldset>
+      <legend>Enter Name</legend>
+      <input type="text" ng-model="ctrl.person.fname" placeholder="First Name"/>
+      <input type="text" ng-model="ctrl.person.lname" placeholder="Last Name"/>
+    </fieldset>
+  </form>
+
+</div>
+<!--
+<script src="/bower_components/angular/angular.js"></script>
+<script src="/bower_components/react/react.js"></script>
+<script src="/bower_components/react/react-dom.js"></script>
+<script src="/bower_components/ngReact/ngReact.js"></script>
+
+<script src="../scripts/controllers/functionmanager.js"></script>
+-->
+
+
 <div ng-include="'inresource.html'"></div>
 
+<div class="container">
+  <h5>template-table-manager</h5>
+
+  <!-- Todos input -->
+  <form role="form" ng-submit="addTodo()">
+    <div class="row">
+      <div class="input-group">
+        <input type="text" ng-model="todo" placeholder="What needs to be done?" class="form-control">
+             <span class="input-group-btn">
+              <input type="submit" value="Add" class="btn btn-primary">
+             </span>
+      </div>
+    </div>
+  </form>
+  <p></p>
+
+  <!-- Todos list -->
+  <div ui-sortable ng-model="todos">
+    <p class="input-group" ng-repeat="todo in todos" style="padding:5px 10px; cursor: move;">
+      <input type="text" ng-model="todo" class="form-control">
+  	        <span class="input-group-btn">
+	            <button class="btn btn-danger" ng-click="removeTodo($index)" aria-label="Remove">X</button>
+	        </span>
+    </p>
+  </div>
 
 <!-- endbuild -->
 <!-- build:js({.tmp,app}) scripts/scripts.js -->

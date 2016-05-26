@@ -19,6 +19,9 @@ app.use('/bower_components', express.static(path.join(__dirname,'./bower_compone
 app.use('/app/styles', express.static(path.join(__dirname,'./app/styles')));
 app.use('/todos', express.static(path.join(__dirname,'./app')));
 
+app.use('/uirouter', express.static(path.join(__dirname,'./ui-router')));
+
+app.use('/nav', express.static(path.join(__dirname,'./nav-router')));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));

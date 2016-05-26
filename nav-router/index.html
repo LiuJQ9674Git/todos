@@ -1,25 +1,14 @@
 <!doctype html>
-<html >
-<meta charset="utf-8">
-<title></title>
+<html ng-app="myApp">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
 
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-<!-- build:css(.) styles/vendor.css -->
-<!-- bower:css -->
-<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
-<!-- endbower -->
-<!-- endbuild -->
-<!-- build:css(.tmp) styles/main.css -->
-<link rel="stylesheet" href="styles/main.css">
-<!-- endbuild -->
+  <title>Nav</title>
 </head>
+<body>
 
-<body ng-app="todosApp">
-<!-- We'll also add some navigation: -->
-<div ng-include="'header.html'"></div>
 
 <div class="header">
   <div class="navbar navbar-default" role="navigation">
@@ -32,37 +21,24 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
         </button>
-
         <a class="navbar-brand" href="/react">abc-tool</a>
       </div>
 
       <div class="collapse navbar-collapse" id="js-navbar-collapse">
-
         <ul class="nav navbar-nav">
-          <li><a href="index.html">Project-Manager</a></li>
-          <li><a ng-href="#/templateManager">Template-Manager</a></li>
-          <li><a ui-sref="state1">State 1</a></li>
-          <li> <a ui-sref="state2">State 2</a></li>
-          <li> <a ui-sref="state3">State 3</a></li>
-          <!--
-         <li><a href="views/templatemanager.html">Template-Manager</a></li>
-         <li><a ng-href="/functionManager">Function-Manager</a></li>
-         -->
-          <li><a href="views/projectmanager.html">Template-Manager</a></li>
-          <li><a class="navbar-brand" href="views/functionmanager.html">Function-Manager</a></li>
-
+           <li><a ui-sref="state1">State 1</a></li>
+           <li><a ui-sref="state2">State 1</a></li>
+           <li><a ui-sref="state3">State 2</a></li>
         </ul>
       </div>
     </div>
   </div>
 </div>
 
-<div data-ui-view=""></div>
+<div ui-view></div>
 
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+
 <script>
   !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
@@ -72,9 +48,6 @@
   ga('create', 'UA-XXXXX-X');
   ga('send', 'pageview');
 </script>
-
-<!-- build:js(.) scripts/vendor.js -->
-<!-- bower:js -->
 <script src="/bower_components/jquery/dist/jquery.js"></script>
 <script src="/bower_components/angular/angular.js"></script>
 <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
@@ -88,21 +61,6 @@
 <script src="/bower_components/angular-ui-sortable/sortable.js"></script>
 <script src="/bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
 <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-<!-- endbower -->
-
-<!-- endbuild -->
-
-<!-- build:js({.tmp,app}) scripts/scripts.js -->
-<script src="scripts/indexrouter.js"></script>
-<script src="scripts/app.js"></script>
-<script src="scripts/controllers/projectmanager.js"></script>
-<script src="scripts/controllers/templatemanager.js"></script>
-
-<!--
-        <script src="scripts/controllers/projectmanager.js"></script>
-        <script src="scripts/controllers/templatemanager.js"></script>
-        -->
-
-<!-- endbuild -->
+<script src="nav.js"></script>
 </body>
 </html>
