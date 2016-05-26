@@ -33,6 +33,11 @@ angular
         controller: 'TemplateManagerController',
         controllerAs: 'templateManager'
       })
+      .when('/functionManager', {
+        templateUrl: 'views/functionmanager.html',
+        controller: 'FunctionManagerController',
+        controllerAs: 'FunctionManager'
+      })
       .otherwise({
         redirectTo: '/'
       });

@@ -17,7 +17,6 @@ app.use('/react', express.static(path.join(__dirname, './public')));
 app.use('/bower_components', express.static(path.join(__dirname,'./bower_components')));
 
 app.use('/app/styles', express.static(path.join(__dirname,'./app/styles')));
-
 app.use('/todos', express.static(path.join(__dirname,'./app')));
 
 

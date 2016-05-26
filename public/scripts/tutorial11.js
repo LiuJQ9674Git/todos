@@ -51,43 +51,44 @@ var CommentList = React.createClass({
 /**
  *
  // tutorial9.js
- *var CommentBox = React.createClass({
- *   render: function() {
- *       return (
- *           <div className="commentBox">
- *               <h1>Comments</h1>
- *               <CommentList data={this.props.data} />
- *               <CommentForm />
- *           </div>
- *       );
- *   }
- *});
- *
- *ReactDOM.render(
- *   <CommentBox data={data} />,
- *  document.getElementById('content')
- *);
+ var CommentBox = React.createClass({
+    render: function() {
+        return (
+            <div className="commentBox">
+                <h1>Comments</h1>
+                <CommentList data={this.props.data} />
+                <CommentForm />
+            </div>
+        );
+    }
+ });
+
+ ReactDOM.render(
+    <CommentBox data={data} />,
+   document.getElementById('content')
+ );
 
  *var data = [
  *   {author: "Pete Hunt", text: "This is one comment"},
  *   {author: "Jordan Walke", text: "This is *another* comment"}
  *];
  // tutorial12.js
- *var CommentBox = React.createClass({
+
+ var CommentBox = React.createClass({
     //getInitialState()在组件的生命周期中仅执行一次，用于设置组件的初始化state。
- *   getInitialState: function() {
- *       return {data: data};
- *   },
- *   render: function() {
- *       return (
- *           <div className="commentBox">
- *               <h1>Comments</h1>
- *               <CommentList data={this.state.data} />
- *               <CommentForm />
- *           </div>
- *       );
- *   }
- *});
+    getInitialState: function() {
+        return {data: data};
+    },
+    render: function() {
+        return (
+            <div className="commentBox">
+                <h1>Comments</h1>
+                <CommentList data={this.state.data} />
+                <CommentForm />
+            </div>
+        );
+    }
+ });
  */
 
 //tutorial14.js
