@@ -2,7 +2,7 @@
  * Created by liujianqiang on 16/5/27.
  */
 var myApp = angular.module('myApp', [
-  'ui.router'
+  'ui.router','react'
 ]);
 
 myApp.config(function($stateProvider, $urlRouterProvider) {

@@ -2,3 +2,33 @@
 <ul>
   <li ng-repeat="item in items">{{ item }}</li>
 </ul>
+
+<div  ng-controller="functionManagerController as ctrl">
+<div class="content">
+  <div class="header">
+    <h1>
+      <div><react-component name="Hello" props="ctrl.person"/></div>
+      <small>
+        <code>&lt;react-component name="Hello" props="ctrl.person"/&gt;</code>
+      </small>
+    </h1>
+    <h1>
+      <div><hello fname="ctrl.person.fname" lname="ctrl.person.lname"/></div>
+      <small>
+        <code>&lt;hello fname="ctrl.person.fname" lname="ctrl.person.lname"/&gt;</code>
+      </small>
+    </h1>
+  </div>
+
+  <form class="pure-form">
+    <fieldset>
+      <legend>Enter Name</legend>
+      <input type="text" ng-model="ctrl.person.fname" placeholder="First Name"/>
+      <input type="text" ng-model="ctrl.person.lname" placeholder="Last Name"/>
+    </fieldset>
+  </form>
+
+</div>
+
+
+</div>
