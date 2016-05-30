@@ -15,13 +15,15 @@ app.set('port', (process.env.PORT || 3000));
 app.use('/react', express.static(path.join(__dirname, './public')));
 
 app.use('/bower_components', express.static(path.join(__dirname,'./bower_components')));
-
+app.use('/node_modules', express.static(path.join(__dirname,'./node_modules')));
 app.use('/app/styles', express.static(path.join(__dirname,'./app/styles')));
 app.use('/todos', express.static(path.join(__dirname,'./app')));
 
 app.use('/uirouter', express.static(path.join(__dirname,'./ui-router')));
 
 app.use('/nav', express.static(path.join(__dirname,'./nav-router')));
+
+app.use('/reactbboot', express.static(path.join(__dirname,'./react-bootstrap')));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
