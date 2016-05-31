@@ -2,7 +2,8 @@
   "name": "todos",
   "scripts": {
     "build": "webpack",
-    "watch": "webpack -w"
+    "watch": "webpack -w",
+    "start": "babel-node server.js"
   },
   "private": true,
   "devDependencies": {

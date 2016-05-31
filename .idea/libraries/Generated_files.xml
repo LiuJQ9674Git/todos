@@ -253,10 +253,8 @@
         <item url="file://$PROJECT_DIR$/node_modules/postcss-minify-font-values/node_modules/source-map/lib/source-node-compiled.js" />
         <item url="file://$PROJECT_DIR$/node_modules/postcss-minify-font-values/node_modules/source-map/lib/array-set-compiled.js" />
         <item url="file://$PROJECT_DIR$/webpack.config-compiled.js" />
-        <item url="file://$PROJECT_DIR$/reactbootstrapbuild/reactbootstrapbundle-compiled.js" />
         <item url="file://$PROJECT_DIR$/node_modules/asap/asap-compiled.js" />
         <item url="file://$PROJECT_DIR$/node_modules/postcss-minify-font-values/node_modules/source-map/lib/base64-vlq-compiled.js" />
-        <item url="file://$PROJECT_DIR$/reactbootstrap/Hello-compiled.js" />
         <item url="file://$PROJECT_DIR$/node_modules/postcss-minify-font-values/node_modules/source-map/lib/base64-compiled.js" />
         <item url="file://$PROJECT_DIR$/node_modules/postcss-minify-font-values/node_modules/source-map/lib/util-compiled.js" />
         <item url="file://$PROJECT_DIR$/node_modules/postcss-minify-font-values/node_modules/postcss/lib/map-generator-compiled.js" />
@@ -344,6 +342,7 @@
         <item url="file://$PROJECT_DIR$/node_modules/react/lib/DefaultEventPluginOrder-compiled-compiled.js" />
         <item url="file://$PROJECT_DIR$/node_modules/react/lib/ReactCSSTransitionGroup-compiled-compiled.js" />
         <item url="file://$PROJECT_DIR$/node_modules/react/lib/SyntheticClipboardEvent-compiled-compiled.js" />
+        <item url="file://$PROJECT_DIR$/reactbootstrapbuild/reactbootstrapbundle-compiled.js" />
         <item url="file://$PROJECT_DIR$/node_modules/react-tools/bin/jsx-compiled.js" />
         <item url="file://$PROJECT_DIR$/node_modules/jshint-loader/node_modules/strip-json-comments/strip-json-comments-compiled.js" />
         <item url="file://$PROJECT_DIR$/node_modules/rcfinder/test/get-compiled.js" />
@@ -354,7 +353,6 @@
         <item url="file://$PROJECT_DIR$/node_modules/jshint-loader/index-compiled.js" />
         <item url="file://$PROJECT_DIR$/node_modules/rcloader/node_modules/lodash/dist/lodash.min-compiled.js" />
         <item url="file://$PROJECT_DIR$/node_modules/rcloader/node_modules/lodash/dist/lodash.underscore-compiled.js" />
-        <item url="file://$PROJECT_DIR$/reactbootstrapbuild/reactbootstrapbundle-compiled.js" />
         <item url="file://$PROJECT_DIR$/node_modules/rcloader/node_modules/lodash/dist/lodash.underscore.min-compiled.js" />
         <item url="file://$PROJECT_DIR$/node_modules/react-tools/node_modules/esprima-fb/esprima-compiled-compiled.js" />
         <item url="file://$PROJECT_DIR$/node_modules/jshint-loader/example/webpack.config-compiled.js" />
@@ -958,6 +956,7 @@
       <root url="file://$PROJECT_DIR$/webpack.config.babel-compiled.js" />
       <root url="file://$PROJECT_DIR$/webpack.config.babel-compiled.js" />
       <root url="file://$PROJECT_DIR$/reactbootstrap/Hello-compiled.js" />
+      <root url="file://$PROJECT_DIR$/reactbootstrap/Hello-compiled.js" />
       <root url="file://$PROJECT_DIR$/node_modules/postcss-reduce-transforms/node_modules/source-map/lib/base64-compiled.js" />
       <root url="file://$PROJECT_DIR$/node_modules/react/lib/getEventKey-compiled.js" />
       <root url="file://$PROJECT_DIR$/node_modules/less/lib/less/tree/ruleset-call-compiled.js" />
@@ -1209,10 +1208,8 @@
       <root url="file://$PROJECT_DIR$/node_modules/postcss-minify-font-values/node_modules/source-map/lib/source-node-compiled.js" />
       <root url="file://$PROJECT_DIR$/node_modules/postcss-minify-font-values/node_modules/source-map/lib/array-set-compiled.js" />
       <root url="file://$PROJECT_DIR$/webpack.config-compiled.js" />
-      <root url="file://$PROJECT_DIR$/reactbootstrapbuild/reactbootstrapbundle-compiled.js" />
       <root url="file://$PROJECT_DIR$/node_modules/asap/asap-compiled.js" />
       <root url="file://$PROJECT_DIR$/node_modules/postcss-minify-font-values/node_modules/source-map/lib/base64-vlq-compiled.js" />
-      <root url="file://$PROJECT_DIR$/reactbootstrap/Hello-compiled.js" />
       <root url="file://$PROJECT_DIR$/node_modules/postcss-minify-font-values/node_modules/source-map/lib/base64-compiled.js" />
       <root url="file://$PROJECT_DIR$/node_modules/postcss-minify-font-values/node_modules/source-map/lib/util-compiled.js" />
       <root url="file://$PROJECT_DIR$/node_modules/postcss-minify-font-values/node_modules/postcss/lib/map-generator-compiled.js" />
@@ -1300,6 +1297,7 @@
       <root url="file://$PROJECT_DIR$/node_modules/react/lib/DefaultEventPluginOrder-compiled-compiled.js" />
       <root url="file://$PROJECT_DIR$/node_modules/react/lib/ReactCSSTransitionGroup-compiled-compiled.js" />
       <root url="file://$PROJECT_DIR$/node_modules/react/lib/SyntheticClipboardEvent-compiled-compiled.js" />
+      <root url="file://$PROJECT_DIR$/reactbootstrapbuild/reactbootstrapbundle-compiled.js" />
       <root url="file://$PROJECT_DIR$/node_modules/react-tools/bin/jsx-compiled.js" />
       <root url="file://$PROJECT_DIR$/node_modules/jshint-loader/node_modules/strip-json-comments/strip-json-comments-compiled.js" />
       <root url="file://$PROJECT_DIR$/node_modules/rcfinder/test/get-compiled.js" />
@@ -1310,7 +1308,6 @@
       <root url="file://$PROJECT_DIR$/node_modules/jshint-loader/index-compiled.js" />
       <root url="file://$PROJECT_DIR$/node_modules/rcloader/node_modules/lodash/dist/lodash.min-compiled.js" />
       <root url="file://$PROJECT_DIR$/node_modules/rcloader/node_modules/lodash/dist/lodash.underscore-compiled.js" />
-      <root url="file://$PROJECT_DIR$/reactbootstrapbuild/reactbootstrapbundle-compiled.js" />
       <root url="file://$PROJECT_DIR$/node_modules/rcloader/node_modules/lodash/dist/lodash.underscore.min-compiled.js" />
       <root url="file://$PROJECT_DIR$/node_modules/react-tools/node_modules/esprima-fb/esprima-compiled-compiled.js" />
       <root url="file://$PROJECT_DIR$/node_modules/jshint-loader/example/webpack.config-compiled.js" />
