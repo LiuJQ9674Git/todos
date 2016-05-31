@@ -18,7 +18,8 @@ module.exports = {
       exclude: /node_modules/,
       loader: 'jsxhint'
     }],
-    loaders: [{
+    loaders: [
+      {
       test: /\.jsx$/,
       exclude: /node_modules/,
       loader: 'react-hot!jsx-loader?harmony'
@@ -31,12 +32,12 @@ module.exports = {
     }, {
       test: /\.(png|jpg)$/,
       loader: 'url-loader?limit=8192'
-    }, {
+    },
+     {
       test: /\.js$/,
       loader: 'babel-loader'
-    }]
+    }
+   ]
 
   }
 };
-
-//# sourceMappingURL=webpack.config-compiled.js.map
