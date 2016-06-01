@@ -20,5 +20,29 @@ require(['./myModuleJQuery'], function(myModuleJQuery) {
 //Using require to load dependencies
 define(function(require) {
   var $ = require('./exportsAMD');
-  $('body').text('hello world-adm');
+  //$('body').text('hello world-adm');
 });
+
+//AMD
+var  alpha=require("./alpha");
+alpha.alpha("test");
+
+//AMD
+require(["./alpha"], function(a) {
+  var test=alpha.alpha("require aplpha ");
+  var appAlpha = document.getElementById("appAlpha");
+  appAlpha.innerHTML = 'Good point: ' +test;
+  // ...
+});
+
+//
+var req=require("./defineModule");
+
+req.method1();
+//
+require( ['./defineModule'], function( defineModule){
+  defineModule.method2();
+  defineModule.method1();
+  console.log("test");
+});
+

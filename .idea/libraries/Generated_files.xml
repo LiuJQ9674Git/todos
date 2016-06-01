@@ -345,6 +345,9 @@
         <item url="file://$PROJECT_DIR$/node_modules/react/lib/DefaultEventPluginOrder-compiled-compiled.js" />
         <item url="file://$PROJECT_DIR$/node_modules/react/lib/ReactCSSTransitionGroup-compiled-compiled.js" />
         <item url="file://$PROJECT_DIR$/node_modules/react/lib/SyntheticClipboardEvent-compiled-compiled.js" />
+        <item url="file://$PROJECT_DIR$/es6/alpha-compiled.js" />
+        <item url="file://$PROJECT_DIR$/es6/defineModule-compiled.js" />
+        <item url="file://$PROJECT_DIR$/es6/beta-compiled.js" />
         <item url="file://$PROJECT_DIR$/es6/exportsAMD-compiled.js" />
         <item url="file://$PROJECT_DIR$/reactbootstrapbuild/reactbootstrapbundle-compiled.js" />
         <item url="file://$PROJECT_DIR$/reactbootstrapbuild/1.reactbootstrapbundle-compiled.js" />
@@ -1308,6 +1311,9 @@
       <root url="file://$PROJECT_DIR$/node_modules/react/lib/DefaultEventPluginOrder-compiled-compiled.js" />
       <root url="file://$PROJECT_DIR$/node_modules/react/lib/ReactCSSTransitionGroup-compiled-compiled.js" />
       <root url="file://$PROJECT_DIR$/node_modules/react/lib/SyntheticClipboardEvent-compiled-compiled.js" />
+      <root url="file://$PROJECT_DIR$/es6/alpha-compiled.js" />
+      <root url="file://$PROJECT_DIR$/es6/defineModule-compiled.js" />
+      <root url="file://$PROJECT_DIR$/es6/beta-compiled.js" />
       <root url="file://$PROJECT_DIR$/es6/exportsAMD-compiled.js" />
       <root url="file://$PROJECT_DIR$/reactbootstrapbuild/reactbootstrapbundle-compiled.js" />
       <root url="file://$PROJECT_DIR$/reactbootstrapbuild/1.reactbootstrapbundle-compiled.js" />

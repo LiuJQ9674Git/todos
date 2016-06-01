@@ -25,8 +25,14 @@
 	 * Created by liujianqiang on 16/6/1.
 	 */ //CommonJs
 var MySalute=__webpack_require__(1);var body=document.getElementById("app");body.innerHTML='Good point: '+MySalute; //
-var ResultMultiplyBy2=__webpack_require__(3);console.log("ResultMultiplyBy2 is",ResultMultiplyBy2);var resultBody=document.getElementById("appdiv");resultBody.textContent='乘法是: '+ResultMultiplyBy2;__webpack_require__.e /* require */(1,function(__webpack_require__){var __WEBPACK_AMD_REQUIRE_ARRAY__=[__webpack_require__(7)];(function(myModuleJQuery){console.log("myModuleJQuery ADM");}).apply(null,__WEBPACK_AMD_REQUIRE_ARRAY__);}); //Using require to load dependencies
-!(__WEBPACK_AMD_DEFINE_RESULT__=function(require){var $=__webpack_require__(5);$('body').text('hello world-adm');}.call(exports,__webpack_require__,exports,module),__WEBPACK_AMD_DEFINE_RESULT__!==undefined&&(module.exports=__WEBPACK_AMD_DEFINE_RESULT__)); /***/}, /* 1 */ /***/function(module,exports,__webpack_require__){"use strict"; //CommonJs
+var ResultMultiplyBy2=__webpack_require__(3);console.log("ResultMultiplyBy2 is",ResultMultiplyBy2);var resultBody=document.getElementById("appdiv");resultBody.textContent='乘法是: '+ResultMultiplyBy2;__webpack_require__.e /* require */(1,function(__webpack_require__){var __WEBPACK_AMD_REQUIRE_ARRAY__=[__webpack_require__(10)];(function(myModuleJQuery){console.log("myModuleJQuery ADM");}).apply(null,__WEBPACK_AMD_REQUIRE_ARRAY__);}); //Using require to load dependencies
+!(__WEBPACK_AMD_DEFINE_RESULT__=function(require){var $=__webpack_require__(5); //$('body').text('hello world-adm');
+}.call(exports,__webpack_require__,exports,module),__WEBPACK_AMD_DEFINE_RESULT__!==undefined&&(module.exports=__WEBPACK_AMD_DEFINE_RESULT__)); //AMD
+var alpha=__webpack_require__(7);alpha.alpha("test"); //AMD
+! /* require */ /* empty */function(){var __WEBPACK_AMD_REQUIRE_ARRAY__=[__webpack_require__(7)];(function(a){var test=alpha.alpha("require aplpha ");var appAlpha=document.getElementById("appAlpha");appAlpha.innerHTML='Good point: '+test; // ...
+}).apply(null,__WEBPACK_AMD_REQUIRE_ARRAY__);}(); //
+var req=__webpack_require__(9);req.method1(); //
+! /* require */ /* empty */function(){var __WEBPACK_AMD_REQUIRE_ARRAY__=[__webpack_require__(9)];(function(defineModule){defineModule.method2();defineModule.method1();}).apply(null,__WEBPACK_AMD_REQUIRE_ARRAY__);}(); /***/}, /* 1 */ /***/function(module,exports,__webpack_require__){"use strict"; //CommonJs
 var MySalute=__webpack_require__(2);var Result=MySalute+"world!";module.exports=Result; /***/}, /* 2 */ /***/function(module,exports){"use strict"; //CommonJs
 var MySalute="Hello";module.exports=MySalute; /***/}, /* 3 */ /***/function(module,exports,__webpack_require__){"use strict"; /**
 	 * Created by liujianqiang on 16/6/1.
@@ -1611,6 +1617,14 @@ _jQuery=window.jQuery, // Map over the $ in case of overwrite
 _$=window.$;jQuery.noConflict=function(deep){if(window.$===jQuery){window.$=_$;}if(deep&&window.jQuery===jQuery){window.jQuery=_jQuery;}return jQuery;}; // Expose jQuery and $ identifiers, even in AMD
 // (#7102#comment:10, https://github.com/jquery/jquery/pull/557)
 // and CommonJS for browser emulators (#13566)
-if(!noGlobal){window.jQuery=window.$=jQuery;}return jQuery;}); /***/} /******/]);
+if(!noGlobal){window.jQuery=window.$=jQuery;}return jQuery;}); /***/}, /* 7 */ /***/function(module,exports,__webpack_require__){var __WEBPACK_AMD_DEFINE_ARRAY__,__WEBPACK_AMD_DEFINE_RESULT__;"use strict"; /**
+	 * Created by liujianqiang on 16/6/2.
+	 */!(__WEBPACK_AMD_DEFINE_ARRAY__=[__webpack_require__,exports,__webpack_require__(8)],__WEBPACK_AMD_DEFINE_RESULT__=function(require,exports,beta){exports.alpha=function(argm){return beta.verb("ADM Test-alpha"+argm); //Or:
+//return require("beta").verb();
+};}.apply(exports,__WEBPACK_AMD_DEFINE_ARRAY__),__WEBPACK_AMD_DEFINE_RESULT__!==undefined&&(module.exports=__WEBPACK_AMD_DEFINE_RESULT__)); /***/}, /* 8 */ /***/function(module,exports,__webpack_require__){var __WEBPACK_AMD_DEFINE_RESULT__;"use strict"; /**
+	 * Created by liujianqiang on 16/6/2.
+	 */!(__WEBPACK_AMD_DEFINE_RESULT__=function(){return {verb:function verb(varg){console.log("beta is",varg);return "beta->"+varg;}};}.call(exports,__webpack_require__,exports,module),__WEBPACK_AMD_DEFINE_RESULT__!==undefined&&(module.exports=__WEBPACK_AMD_DEFINE_RESULT__)); /***/}, /* 9 */ /***/function(module,exports,__webpack_require__){"use strict"; /**
+	 * Created by liujianqiang on 16/6/2.
+	 */!(module.exports={method1:function method1(){console.log("method1");},method2:function method2(){console.log("method1");}}); /***/} /******/]);
 
 //# sourceMappingURL=reactbootstrapbundle-compiled.js.map
