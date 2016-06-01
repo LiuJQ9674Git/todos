@@ -1,15 +1,20 @@
 "use strict";
 
-/**
- * Created by liujianqiang on 16/6/1.
- */
+var _HeaderNavigation = require("./HeaderNavigation");
+
+var _HeaderNavigation2 = _interopRequireDefault(_HeaderNavigation);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 //CommonJs
-var MySalute = require("./worldCommonJs");
+var MySalute = require("./worldCommonJs"); /**
+                                            * Created by liujianqiang on 16/6/1.
+                                            */
+
 var body = document.getElementById("app");
 body.innerHTML = 'Good point: ' + MySalute;
 
 //
-
 var ResultMultiplyBy2 = require('./moduleBCommonJS');
 console.log("ResultMultiplyBy2 is", ResultMultiplyBy2);
 var resultBody = document.getElementById("appdiv");

@@ -1,13 +1,30 @@
 /**
  * Created by liujianqiang on 16/6/1.
  */
+import React from 'react';
+import NavMain from './NavMain';
+global.React = React;
+
+
+require( ['./activeButton'], function( activeButton){
+
+  console.log("test");
+});
+
+//
+React.render(
+  <div>
+    <NavMain />
+    <p>TTT</p>
+  </div>
+  , document.getElementById('appMainNav'));
+
 //CommonJs
 var MySalute = require("./worldCommonJs");
 var body = document.getElementById("app");
 body.innerHTML = 'Good point: ' +MySalute;
 
 //
-
 var ResultMultiplyBy2 = require('./moduleBCommonJS');
 console.log("ResultMultiplyBy2 is",ResultMultiplyBy2);
 var resultBody = document.getElementById("appdiv");
