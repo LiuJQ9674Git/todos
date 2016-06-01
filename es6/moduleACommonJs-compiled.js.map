@@ -1,0 +1,1 @@
+{"version":3,"sources":["moduleACommonJs.js"],"names":[],"mappings":";;;;;;AAIA,OAAO,OAAP,GAAiB,UAAU,KAAV,EAAiB;AAChC,SAAO,QAAM,CAAb;AACD,CAFD","file":"moduleACommonJs-compiled.js","sourcesContent":["/**\n * Created by liujianqiang on 16/6/1.\n */\n// moduleACommonJS.js\nmodule.exports = function( value ){\n  return value*2;\n}\n"]}

@@ -8,7 +8,8 @@ var BUILD_PATH = path.resolve(ROOT_PATH, 'reactbootstrapbuild');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
-  entry: './react-bootstrap/App.js',
+  //entry: './react-bootstrap/App.js',
+  entry: './es6/App.js',
   output: {
     path: path.join(__dirname, 'reactbootstrapbuild'),
     filename: 'reactbootstrapbundle.js',

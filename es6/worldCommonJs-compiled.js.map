@@ -1,0 +1,1 @@
+{"version":3,"sources":["worldCommonJs.js"],"names":[],"mappings":";;;AACA,IAAI,WAAW,QAAQ,kBAAR,CAAf;AACA,IAAI,SAAS,WAAW,QAAxB;AACA,OAAO,OAAP,GAAiB,MAAjB","file":"worldCommonJs-compiled.js","sourcesContent":["//CommonJs\nvar MySalute = require(\"./saluteCommonJs\");\nvar Result = MySalute + \"world!\";\nmodule.exports = Result;\n"]}
