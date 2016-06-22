@@ -2,12 +2,12 @@
 
 webpackJsonp([1], {
 
-	/***/294:
+	/***/299:
 	/***/function _(module, exports, __webpack_require__) {
 
 		var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;'use strict';
 
-		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(295), __webpack_require__(296), __webpack_require__(273)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, ButtonToolbar, Button, ReactDOM) {
+		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(300), __webpack_require__(301)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, ButtonToolbar, Button) {
 			var buttonsInstance = React.createElement(ButtonToolbar, null, React.createElement(Button, { bsStyle: "primary", bsSize: "large", active: true }, "Primary button"), React.createElement(Button, { bsSize: "large", active: true }, "Button"));
 
 			React.render(buttonsInstance, document.getElementById('appButton'));
@@ -16,7 +16,7 @@ webpackJsonp([1], {
 		/***/
 	},
 
-	/***/295:
+	/***/300:
 	/***/function _(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -37,7 +37,7 @@ webpackJsonp([1], {
 
 		var _utilsBootstrapUtils = __webpack_require__(251);
 
-		var _Button = __webpack_require__(296);
+		var _Button = __webpack_require__(301);
 
 		var _Button2 = _interopRequireDefault(_Button);
 
@@ -70,7 +70,7 @@ webpackJsonp([1], {
 		/***/
 	},
 
-	/***/296:
+	/***/301:
 	/***/function _(module, exports, __webpack_require__) {
 
 		'use strict';
@@ -101,7 +101,7 @@ webpackJsonp([1], {
 
 		var _utilsBootstrapUtils = __webpack_require__(251);
 
-		var _SafeAnchor = __webpack_require__(297);
+		var _SafeAnchor = __webpack_require__(302);
 
 		var _SafeAnchor2 = _interopRequireDefault(_SafeAnchor);
 
@@ -208,7 +208,7 @@ webpackJsonp([1], {
 		/***/
 	},
 
-	/***/297:
+	/***/302:
 	/***/function _(module, exports, __webpack_require__) {
 
 		'use strict';

@@ -23,17 +23,33 @@
 /******/__webpack_require__.p="reactbootstrapbuild/"; /******/ // Load entry module and return exports
 /******/return __webpack_require__(0); /******/})( /************************************************************************/ /******/[ /* 0 */ /***/function(module,exports,__webpack_require__){var __WEBPACK_AMD_DEFINE_RESULT__; /* WEBPACK VAR INJECTION */(function(global){'use strict';var _react=__webpack_require__(1);var _react2=_interopRequireDefault(_react);var _NavMain=__webpack_require__(157);var _NavMain2=_interopRequireDefault(_NavMain);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};} /**
 	 * Created by liujianqiang on 16/6/1.
-	 */global.React=_react2.default;__webpack_require__.e /* require */(1,function(__webpack_require__){var __WEBPACK_AMD_REQUIRE_ARRAY__=[__webpack_require__(294)];(function(activeButton){console.log("test");}).apply(null,__WEBPACK_AMD_REQUIRE_ARRAY__);}); //
+	 */global.React=_react2.default; //Module define start
+var Rocker=__webpack_require__(285);var r=new Rocker('Ozzy',62);r.about();var circle=__webpack_require__(286);console.log(circle.area(4));var area=__webpack_require__(287);console.log(area(4));var findLargest=__webpack_require__(288);findLargest('./es6',function(er,filename){if(er)return console.error(er);console.log('largest file was:',filename);}); //Module define over
+//LikeButton Start
+var LikeButton=_react2.default.createClass({displayName:"LikeButton",getInitialState:function getInitialState(){return {liked:false};},handleClick:function handleClick(event){this.setState({liked:!this.state.liked});},render:function render(){var text=this.state.liked?'like':'haven\'t liked';return _react2.default.createElement("p",{onClick:this.handleClick},"You ",text," this. Click to toggle.");}});_react2.default.render(_react2.default.createElement(LikeButton,null),document.getElementById('appLikeButton')); //LikeButton Over
+//HelloMessage start
+var HelloMessage=_react2.default.createClass({displayName:"HelloMessage",render:function render(){return _react2.default.createElement("div",null,"Hello ",this.props.name);}});_react2.default.render(_react2.default.createElement(HelloMessage,{name:"Beijing"}),document.getElementById('appHelloMessage')); //HelloMessage over
+//Timer start
+var Timer=_react2.default.createClass({displayName:"Timer",getInitialState:function getInitialState(){return {secondsElapsed:0};},tick:function tick(){this.setState({secondsElapsed:this.state.secondsElapsed+1});},componentDidMount:function componentDidMount(){this.interval=setInterval(this.tick,1000);},componentWillUnmount:function componentWillUnmount(){clearInterval(this.interval);},render:function render(){return _react2.default.createElement("div",null,"Seconds Elapsed: ",this.state.secondsElapsed);}});_react2.default.render(_react2.default.createElement(Timer,null),document.getElementById('appTimer')); //Timer  over
+//TodoList  start
+var TodoList=_react2.default.createClass({displayName:"TodoList",render:function render(){var createItem=function createItem(itemText){return _react2.default.createElement("li",null,itemText);};return _react2.default.createElement("ul",null,this.props.items.map(createItem));}});var TodoApp=_react2.default.createClass({displayName:"TodoApp",getInitialState:function getInitialState(){return {items:[],text:''};},onChange:function onChange(e){this.setState({text:e.target.value});},handleSubmit:function handleSubmit(e){e.preventDefault();var nextItems=this.state.items.concat([this.state.text]);var nextText='';this.setState({items:nextItems,text:nextText});},render:function render(){return _react2.default.createElement("div",null,_react2.default.createElement("h3",null,"TODO"),_react2.default.createElement(TodoList,{items:this.state.items}),_react2.default.createElement("form",{onSubmit:this.handleSubmit},_react2.default.createElement("input",{onChange:this.onChange,value:this.state.text}),_react2.default.createElement("button",null,'Add #'+(this.state.items.length+1))));}});_react2.default.render(_react2.default.createElement(TodoApp,null),document.getElementById('appTodoList')); //TodoList over
+//appAppChildren start
+var AppChildren=_react2.default.createClass({displayName:"AppChildren",componentDidMount:function componentDidMount(){ // This doesn't refer to the `span`s! It refers to the children between
+// last line's `<App></App>`, which are undefined.
+console.log(this.props.children);},render:function render(){return _react2.default.createElement("div",null,_react2.default.createElement("span",null),_react2.default.createElement("span",null));}});_react2.default.render(_react2.default.createElement(AppChildren,null),document.getElementById('appAppChildren')); //appAppChildren over
+//controlled component start
+_react2.default.render(_react2.default.createElement("input",{value:"hi"}),document.getElementById('appAppControlledComponent'));setTimeout(function(){_react2.default.render(_react2.default.createElement("input",{value:null}),document.getElementById('appAppControlledComponent'));},10000); //controlled component over
+__webpack_require__.e /* require */(1,function(__webpack_require__){var __WEBPACK_AMD_REQUIRE_ARRAY__=[__webpack_require__(299)];(function(activeButton){console.log("test");}).apply(null,__WEBPACK_AMD_REQUIRE_ARRAY__);}); //
 _react2.default.render(_react2.default.createElement("div",null,_react2.default.createElement(_NavMain2.default,null),_react2.default.createElement("p",null,"TTT")),document.getElementById('appMainNav')); //CommonJs
-var MySalute=__webpack_require__(285);var body=document.getElementById("app");body.innerHTML='Good point: '+MySalute; //
-var ResultMultiplyBy2=__webpack_require__(287);console.log("ResultMultiplyBy2 is",ResultMultiplyBy2);var resultBody=document.getElementById("appdiv");resultBody.textContent='乘法是: '+ResultMultiplyBy2;__webpack_require__.e /* require */(2,function(__webpack_require__){var __WEBPACK_AMD_REQUIRE_ARRAY__=[__webpack_require__(298)];(function(myModuleJQuery){console.log("myModuleJQuery ADM");}).apply(null,__WEBPACK_AMD_REQUIRE_ARRAY__);}); //Using require to load dependencies
-!(__WEBPACK_AMD_DEFINE_RESULT__=function(require){var $=__webpack_require__(289); //$('body').text('hello world-adm');
+var MySalute=__webpack_require__(290);var body=document.getElementById("app");body.innerHTML='Good point: '+MySalute; //
+var ResultMultiplyBy2=__webpack_require__(292);console.log("ResultMultiplyBy2 is",ResultMultiplyBy2);var resultBody=document.getElementById("appdiv");resultBody.textContent='乘法是: '+ResultMultiplyBy2;__webpack_require__.e /* require */(2,function(__webpack_require__){var __WEBPACK_AMD_REQUIRE_ARRAY__=[__webpack_require__(303)];(function(myModuleJQuery){console.log("myModuleJQuery ADM");}).apply(null,__WEBPACK_AMD_REQUIRE_ARRAY__);}); //Using require to load dependencies
+!(__WEBPACK_AMD_DEFINE_RESULT__=function(require){var $=__webpack_require__(294); //$('body').text('hello world-adm');
 }.call(exports,__webpack_require__,exports,module),__WEBPACK_AMD_DEFINE_RESULT__!==undefined&&(module.exports=__WEBPACK_AMD_DEFINE_RESULT__)); //AMD
-var alpha=__webpack_require__(291);alpha.alpha("test"); //AMD
-! /* require */ /* empty */function(){var __WEBPACK_AMD_REQUIRE_ARRAY__=[__webpack_require__(291)];(function(a){var test=alpha.alpha("require aplpha ");var appAlpha=document.getElementById("appAlpha");appAlpha.innerHTML='Good point: '+test; // ...
+var alpha=__webpack_require__(296);alpha.alpha("test"); //AMD
+! /* require */ /* empty */function(){var __WEBPACK_AMD_REQUIRE_ARRAY__=[__webpack_require__(296)];(function(a){var test=alpha.alpha("require aplpha ");var appAlpha=document.getElementById("appAlpha");appAlpha.innerHTML='Good point: '+test; // ...
 }).apply(null,__WEBPACK_AMD_REQUIRE_ARRAY__);}(); //
-var req=__webpack_require__(293);req.method1(); //
-! /* require */ /* empty */function(){var __WEBPACK_AMD_REQUIRE_ARRAY__=[__webpack_require__(293)];(function(defineModule){defineModule.method2();defineModule.method1();console.log("test");}).apply(null,__WEBPACK_AMD_REQUIRE_ARRAY__);}(); /* WEBPACK VAR INJECTION */}).call(exports,function(){return this;}()); /***/}, /* 1 */ /***/function(module,exports,__webpack_require__){module.exports=__webpack_require__(2); /***/}, /* 2 */ /***/function(module,exports,__webpack_require__){ /* WEBPACK VAR INJECTION */(function(process){ /**
+var req=__webpack_require__(298);req.method1(); //
+! /* require */ /* empty */function(){var __WEBPACK_AMD_REQUIRE_ARRAY__=[__webpack_require__(298)];(function(defineModule){defineModule.method2();defineModule.method1();console.log("test");}).apply(null,__WEBPACK_AMD_REQUIRE_ARRAY__);}(); /* WEBPACK VAR INJECTION */}).call(exports,function(){return this;}()); /***/}, /* 1 */ /***/function(module,exports,__webpack_require__){module.exports=__webpack_require__(2); /***/}, /* 2 */ /***/function(module,exports,__webpack_require__){ /* WEBPACK VAR INJECTION */(function(process){ /**
 	 * Copyright 2013-2015, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -6543,18 +6559,80 @@ for(var alias in aliases){codes[alias]=aliases[alias];} /***/}, /* 282 */ /***/f
 	 * @param {function(*, int)} func.
 	 * @param {*} context Context for func.
 	 * @returns {array} of children that meet the func return statement
-	 */function filter(children,func,context){var index=0;var result=[];_react2['default'].Children.forEach(children,function(child){if(!_react2['default'].isValidElement(child)){return;}if(func.call(context,child,index++)){result.push(child);}});return result;}function find(children,func,context){var index=0;var result=undefined;_react2['default'].Children.forEach(children,function(child){if(result){return;}if(!_react2['default'].isValidElement(child)){return;}if(func.call(context,child,index++)){result=child;}});return result;}function some(children,func,context){var index=0;var result=false;_react2['default'].Children.forEach(children,function(child){if(result){return;}if(!_react2['default'].isValidElement(child)){return;}if(func.call(context,child,index++)){result=true;}});return result;}exports['default']={map:map,forEach:forEach,count:count,find:find,filter:filter,some:some};module.exports=exports['default']; /***/}, /* 285 */ /***/function(module,exports,__webpack_require__){"use strict"; //CommonJs
-var MySalute=__webpack_require__(286);var Result=MySalute+"world!";module.exports=Result; /***/}, /* 286 */ /***/function(module,exports){"use strict"; //CommonJs
-var MySalute="Hello";module.exports=MySalute; /***/}, /* 287 */ /***/function(module,exports,__webpack_require__){"use strict"; /**
+	 */function filter(children,func,context){var index=0;var result=[];_react2['default'].Children.forEach(children,function(child){if(!_react2['default'].isValidElement(child)){return;}if(func.call(context,child,index++)){result.push(child);}});return result;}function find(children,func,context){var index=0;var result=undefined;_react2['default'].Children.forEach(children,function(child){if(result){return;}if(!_react2['default'].isValidElement(child)){return;}if(func.call(context,child,index++)){result=child;}});return result;}function some(children,func,context){var index=0;var result=false;_react2['default'].Children.forEach(children,function(child){if(result){return;}if(!_react2['default'].isValidElement(child)){return;}if(func.call(context,child,index++)){result=true;}});return result;}exports['default']={map:map,forEach:forEach,count:count,find:find,filter:filter,some:some};module.exports=exports['default']; /***/}, /* 285 */ /***/function(module,exports){'use strict'; /*
+	module.exports = 'ROCK IT!'; 
+	exports.name = function() { 
+	  console.log('My name is Lemmy Kilmister'); 
+	};
+
+	module.exports.name=function(){
+	  console.log('My name is Lemmy Kilmister'); 
+	};
+
+	*/module.exports=function(name,age){this.name=name;this.age=age;this.about=function(){console.log(this.name+' is '+this.age+' years old');};}; /***/}, /* 286 */ /***/function(module,exports){'use strict';exports.area=function(r){return r*r*Math.PI;};exports.nameLocal=function(){console.log('My name is Lemmy Kilmister');}; /***/}, /* 287 */ /***/function(module,exports){"use strict";module.exports=function(r){return r*r*Math.PI;}; /***/}, /* 288 */ /***/function(module,exports,__webpack_require__){'use strict';var fs=__webpack_require__(!function webpackMissingModule(){var e=new Error("Cannot find module \"fs\"");e.code='MODULE_NOT_FOUND';throw e;}());var path=__webpack_require__(289);module.exports=function(dir,cb){fs.readdir(dir,function(er,files){ //[1]
+if(er)return cb(er);var counter=files.length;var errored=false;var stats=[];files.forEach(function(file,index){fs.stat(path.join(dir,file),function(er,stat){ //[2]
+if(errored)return;if(er){errored=true;return cb(er);}stats[index]=stat; //[3]
+if(--counter==0){ //[4]
+var largest=stats.filter(function(stat){return stat.isFile();}) //[5]
+.reduce(function(prev,next){ //[6]
+if(prev.size>next.size)return prev;return next;});cb(null,files[stats.indexOf(largest)]); //[7]
+}});});});}; /***/}, /* 289 */ /***/function(module,exports,__webpack_require__){ /* WEBPACK VAR INJECTION */(function(process){ // Copyright Joyent, Inc. and other Node contributors.
+//
+// Permission is hereby granted, free of charge, to any person obtaining a
+// copy of this software and associated documentation files (the
+// "Software"), to deal in the Software without restriction, including
+// without limitation the rights to use, copy, modify, merge, publish,
+// distribute, sublicense, and/or sell copies of the Software, and to permit
+// persons to whom the Software is furnished to do so, subject to the
+// following conditions:
+//
+// The above copyright notice and this permission notice shall be included
+// in all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+// USE OR OTHER DEALINGS IN THE SOFTWARE.
+// resolves . and .. elements in a path array with directory names there
+// must be no slashes, empty elements, or device names (c:\) in the array
+// (so also no leading and trailing slashes - it does not distinguish
+// relative and absolute paths)
+function normalizeArray(parts,allowAboveRoot){ // if the path tries to go above the root, `up` ends up > 0
+var up=0;for(var i=parts.length-1;i>=0;i--){var last=parts[i];if(last==='.'){parts.splice(i,1);}else if(last==='..'){parts.splice(i,1);up++;}else if(up){parts.splice(i,1);up--;}} // if the path is allowed to go above the root, restore leading ..s
+if(allowAboveRoot){for(;up--;up){parts.unshift('..');}}return parts;} // Split a filename into [root, dir, basename, ext], unix version
+// 'root' is just a slash, or nothing.
+var splitPathRe=/^(\/?|)([\s\S]*?)((?:\.{1,2}|[^\/]+?|)(\.[^.\/]*|))(?:[\/]*)$/;var splitPath=function splitPath(filename){return splitPathRe.exec(filename).slice(1);}; // path.resolve([from ...], to)
+// posix version
+exports.resolve=function(){var resolvedPath='',resolvedAbsolute=false;for(var i=arguments.length-1;i>=-1&&!resolvedAbsolute;i--){var path=i>=0?arguments[i]:process.cwd(); // Skip empty and invalid entries
+if(typeof path!=='string'){throw new TypeError('Arguments to path.resolve must be strings');}else if(!path){continue;}resolvedPath=path+'/'+resolvedPath;resolvedAbsolute=path.charAt(0)==='/';} // At this point the path should be resolved to a full absolute path, but
+// handle relative paths to be safe (might happen when process.cwd() fails)
+// Normalize the path
+resolvedPath=normalizeArray(filter(resolvedPath.split('/'),function(p){return !!p;}),!resolvedAbsolute).join('/');return (resolvedAbsolute?'/':'')+resolvedPath||'.';}; // path.normalize(path)
+// posix version
+exports.normalize=function(path){var isAbsolute=exports.isAbsolute(path),trailingSlash=substr(path,-1)==='/'; // Normalize the path
+path=normalizeArray(filter(path.split('/'),function(p){return !!p;}),!isAbsolute).join('/');if(!path&&!isAbsolute){path='.';}if(path&&trailingSlash){path+='/';}return (isAbsolute?'/':'')+path;}; // posix version
+exports.isAbsolute=function(path){return path.charAt(0)==='/';}; // posix version
+exports.join=function(){var paths=Array.prototype.slice.call(arguments,0);return exports.normalize(filter(paths,function(p,index){if(typeof p!=='string'){throw new TypeError('Arguments to path.join must be strings');}return p;}).join('/'));}; // path.relative(from, to)
+// posix version
+exports.relative=function(from,to){from=exports.resolve(from).substr(1);to=exports.resolve(to).substr(1);function trim(arr){var start=0;for(;start<arr.length;start++){if(arr[start]!=='')break;}var end=arr.length-1;for(;end>=0;end--){if(arr[end]!=='')break;}if(start>end)return [];return arr.slice(start,end-start+1);}var fromParts=trim(from.split('/'));var toParts=trim(to.split('/'));var length=Math.min(fromParts.length,toParts.length);var samePartsLength=length;for(var i=0;i<length;i++){if(fromParts[i]!==toParts[i]){samePartsLength=i;break;}}var outputParts=[];for(var i=samePartsLength;i<fromParts.length;i++){outputParts.push('..');}outputParts=outputParts.concat(toParts.slice(samePartsLength));return outputParts.join('/');};exports.sep='/';exports.delimiter=':';exports.dirname=function(path){var result=splitPath(path),root=result[0],dir=result[1];if(!root&&!dir){ // No dirname whatsoever
+return '.';}if(dir){ // It has a dirname, strip trailing slash
+dir=dir.substr(0,dir.length-1);}return root+dir;};exports.basename=function(path,ext){var f=splitPath(path)[2]; // TODO: make this comparison case-insensitive on windows?
+if(ext&&f.substr(-1*ext.length)===ext){f=f.substr(0,f.length-ext.length);}return f;};exports.extname=function(path){return splitPath(path)[3];};function filter(xs,f){if(xs.filter)return xs.filter(f);var res=[];for(var i=0;i<xs.length;i++){if(f(xs[i],i,xs))res.push(xs[i]);}return res;} // String.prototype.substr - negative index don't work in IE8
+var substr='ab'.substr(-1)==='b'?function(str,start,len){return str.substr(start,len);}:function(str,start,len){if(start<0)start=str.length+start;return str.substr(start,len);}; /* WEBPACK VAR INJECTION */}).call(exports,__webpack_require__(3)); /***/}, /* 290 */ /***/function(module,exports,__webpack_require__){"use strict"; //CommonJs
+var MySalute=__webpack_require__(291);var Result=MySalute+"world!";module.exports=Result; /***/}, /* 291 */ /***/function(module,exports){"use strict"; //CommonJs
+var MySalute="Hello";module.exports=MySalute; /***/}, /* 292 */ /***/function(module,exports,__webpack_require__){"use strict"; /**
 	 * Created by liujianqiang on 16/6/1.
 	 */ //moduleBCommonJS
-var multiplyBy2=__webpack_require__(288);var ResultMultiplyBy2=multiplyBy2(14);module.exports=ResultMultiplyBy2;console.log("result is",ResultMultiplyBy2); /***/}, /* 288 */ /***/function(module,exports){"use strict"; /**
+var multiplyBy2=__webpack_require__(293);var ResultMultiplyBy2=multiplyBy2(14);module.exports=ResultMultiplyBy2;console.log("result is",ResultMultiplyBy2); /***/}, /* 293 */ /***/function(module,exports){"use strict"; /**
 	 * Created by liujianqiang on 16/6/1.
 	 */ // moduleACommonJS.js
-module.exports=function(value){return value*2;}; /***/}, /* 289 */ /***/function(module,exports,__webpack_require__){var __WEBPACK_AMD_DEFINE_ARRAY__,__WEBPACK_AMD_DEFINE_RESULT__;'use strict'; /**
+module.exports=function(value){return value*2;}; /***/}, /* 294 */ /***/function(module,exports,__webpack_require__){var __WEBPACK_AMD_DEFINE_ARRAY__,__WEBPACK_AMD_DEFINE_RESULT__;'use strict'; /**
 	 * Created by liujianqiang on 16/6/2.
 	 */ //Define a module that exports itself.
-!(__WEBPACK_AMD_DEFINE_ARRAY__=[__webpack_require__(290)],__WEBPACK_AMD_DEFINE_RESULT__=function($){var HelloWorldize=function HelloWorldize(selector){console.log("selector is:",selector);$(selector).text('exportsAMD hello world');};return HelloWorldize;}.apply(exports,__WEBPACK_AMD_DEFINE_ARRAY__),__WEBPACK_AMD_DEFINE_RESULT__!==undefined&&(module.exports=__WEBPACK_AMD_DEFINE_RESULT__)); /***/}, /* 290 */ /***/function(module,exports,__webpack_require__){var __WEBPACK_AMD_DEFINE_ARRAY__,__WEBPACK_AMD_DEFINE_RESULT__; /*!
+!(__WEBPACK_AMD_DEFINE_ARRAY__=[__webpack_require__(295)],__WEBPACK_AMD_DEFINE_RESULT__=function($){var HelloWorldize=function HelloWorldize(selector){console.log("selector is:",selector);$(selector).text('exportsAMD hello world');};return HelloWorldize;}.apply(exports,__WEBPACK_AMD_DEFINE_ARRAY__),__WEBPACK_AMD_DEFINE_RESULT__!==undefined&&(module.exports=__WEBPACK_AMD_DEFINE_RESULT__)); /***/}, /* 295 */ /***/function(module,exports,__webpack_require__){var __WEBPACK_AMD_DEFINE_ARRAY__,__WEBPACK_AMD_DEFINE_RESULT__; /*!
 	 * jQuery JavaScript Library v2.2.4
 	 * http://jquery.com/
 	 *
@@ -8128,13 +8206,13 @@ _jQuery=window.jQuery, // Map over the $ in case of overwrite
 _$=window.$;jQuery.noConflict=function(deep){if(window.$===jQuery){window.$=_$;}if(deep&&window.jQuery===jQuery){window.jQuery=_jQuery;}return jQuery;}; // Expose jQuery and $ identifiers, even in AMD
 // (#7102#comment:10, https://github.com/jquery/jquery/pull/557)
 // and CommonJS for browser emulators (#13566)
-if(!noGlobal){window.jQuery=window.$=jQuery;}return jQuery;}); /***/}, /* 291 */ /***/function(module,exports,__webpack_require__){var __WEBPACK_AMD_DEFINE_ARRAY__,__WEBPACK_AMD_DEFINE_RESULT__;"use strict"; /**
+if(!noGlobal){window.jQuery=window.$=jQuery;}return jQuery;}); /***/}, /* 296 */ /***/function(module,exports,__webpack_require__){var __WEBPACK_AMD_DEFINE_ARRAY__,__WEBPACK_AMD_DEFINE_RESULT__;"use strict"; /**
 	 * Created by liujianqiang on 16/6/2.
-	 */!(__WEBPACK_AMD_DEFINE_ARRAY__=[__webpack_require__,exports,__webpack_require__(292)],__WEBPACK_AMD_DEFINE_RESULT__=function(require,exports,beta){exports.alpha=function(argm){return beta.verb("ADM Test-alpha"+argm); //Or:
+	 */!(__WEBPACK_AMD_DEFINE_ARRAY__=[__webpack_require__,exports,__webpack_require__(297)],__WEBPACK_AMD_DEFINE_RESULT__=function(require,exports,beta){exports.alpha=function(argm){return beta.verb("ADM Test-alpha"+argm); //Or:
 //return require("beta").verb();
-};}.apply(exports,__WEBPACK_AMD_DEFINE_ARRAY__),__WEBPACK_AMD_DEFINE_RESULT__!==undefined&&(module.exports=__WEBPACK_AMD_DEFINE_RESULT__)); /***/}, /* 292 */ /***/function(module,exports,__webpack_require__){var __WEBPACK_AMD_DEFINE_RESULT__;"use strict"; /**
+};}.apply(exports,__WEBPACK_AMD_DEFINE_ARRAY__),__WEBPACK_AMD_DEFINE_RESULT__!==undefined&&(module.exports=__WEBPACK_AMD_DEFINE_RESULT__)); /***/}, /* 297 */ /***/function(module,exports,__webpack_require__){var __WEBPACK_AMD_DEFINE_RESULT__;"use strict"; /**
 	 * Created by liujianqiang on 16/6/2.
-	 */!(__WEBPACK_AMD_DEFINE_RESULT__=function(){return {verb:function verb(varg){console.log("beta is",varg);return "beta->"+varg;}};}.call(exports,__webpack_require__,exports,module),__WEBPACK_AMD_DEFINE_RESULT__!==undefined&&(module.exports=__WEBPACK_AMD_DEFINE_RESULT__)); /***/}, /* 293 */ /***/function(module,exports,__webpack_require__){"use strict"; /**
+	 */!(__WEBPACK_AMD_DEFINE_RESULT__=function(){return {verb:function verb(varg){console.log("beta is",varg);return "beta->"+varg;}};}.call(exports,__webpack_require__,exports,module),__WEBPACK_AMD_DEFINE_RESULT__!==undefined&&(module.exports=__WEBPACK_AMD_DEFINE_RESULT__)); /***/}, /* 298 */ /***/function(module,exports,__webpack_require__){"use strict"; /**
 	 * Created by liujianqiang on 16/6/2.
 	 */!(module.exports={method1:function method1(){console.log("method1");},method2:function method2(){console.log("method1");}}); /***/} /******/]);
 

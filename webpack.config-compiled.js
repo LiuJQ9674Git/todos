@@ -1,13 +1,18 @@
 'use strict';
 
 var HtmlwebpackPlugin = require('html-webpack-plugin');
+var commonsPlugin = new webpack.optimize.CommonsChunkPlugin('common.js');
+
 var path = require('path');
+var fs = require('fs');
 var ROOT_PATH = path.resolve(__dirname);
 var APP_PATH = path.resolve(ROOT_PATH, 'react-bootstrap');
 var BUILD_PATH = path.resolve(ROOT_PATH, 'reactbootstrapbuild');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
+  //插件项
+  plugins: [commonsPlugin],
   //entry: './react-bootstrap/App.js',
   entry: './es6/App.js',
   output: {
