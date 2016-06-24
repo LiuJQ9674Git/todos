@@ -31,7 +31,7 @@ findlargestasynced('./es6', function (er, filename) {
 })
 
 
-var Promise = require('q');
+var q = require('q');
 /**
 var p = new Promise(function(resolve, reject) {
   resolve("hello world 北京");//
