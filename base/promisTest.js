@@ -191,6 +191,7 @@ allPromise.spread(function(data,data1){
 })
 
 
+
 function readFile(previous, fileName) {
   return Q.promise(function (resolve, reject) {
     fs.readFile(path.join(process.cwd(), fileName),
@@ -214,4 +215,56 @@ readFile('', 'index.html')
   .catch(function (error) {
     console.log(error);
   }).done();
+
+/**
+var promise = readFile()
+var promise2 = promise.then(function (data) {
+  return readAnotherFile()
+}, function (err) {
+  console.error(err)
+  // if readFile was unsuccessful,
+  //let's log it but still readAnotherFile
+  return readAnotherFile()
+})
+// the result of readAnotherFile
+promise2.then(console.log, console.error)
+**/
+/**
+var promise = readFile()
+var promise2 = promise.then(readAnotherFile, console.error)
+**/
+/**
+readFile(function (err, data) {
+  if (err) return console.error(err)
+  console.log(data)
+})
+
+var promise = readFile()
+promise.then(console.log, console.error)
+
+readFile()
+  .then(readAnotherFile)
+  .then(doSomethingElse)
+  .then()
+
+
+readFile()
+  .then(function (data) {
+    return readAnotherFile().then(function () {
+      // do something with `data`
+    })
+  })
+
+try {
+  doThis()
+  doThat()
+} catch (err) {
+  console.error(err)
+}
+
+doThisAsync()
+  .then(doThatAsync)
+  .then(null, console.error)
+ **/
+
 

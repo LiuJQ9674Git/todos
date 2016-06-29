@@ -58,7 +58,17 @@
     .spread(function (x, y) {
         console.log(x, y);
     })
-    .done();
+    .done()Q.all([1, 2, 3].map(eventually))
+    .done(function (result) {
+        console.log(result);
+    });
+    
+    Q.all([
+        eventually(10),
+        eventually(20)
+    ])
+    .spread(function (x, y) {
+        console.log(x, y);;
 
     /**
     var p = new Promise(function(resolve, reject) {
